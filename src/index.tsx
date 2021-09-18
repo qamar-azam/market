@@ -6,12 +6,16 @@ import { persistor, store } from "./app/store"
 import { Provider } from "react-redux"
 import * as serviceWorker from "./serviceWorker"
 import { PersistGate } from "redux-persist/integration/react"
+import { ThemeProvider } from "styled-components"
+import { theme } from "./theme/theme"
 
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
       <PersistGate loading={null} persistor={persistor}>
-        <App />
+        <ThemeProvider theme={theme.default}>
+          <App />
+        </ThemeProvider>
       </PersistGate>
     </Provider>
   </React.StrictMode>,

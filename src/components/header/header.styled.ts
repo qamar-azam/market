@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 export const StyledAppHeader = styled.header`
-  background-color: #1ea4ce;
+  background-color: ${({ theme }) => theme.header.bgColor};
   margin-bottom: 40px;
   min-height: 80px;
 `

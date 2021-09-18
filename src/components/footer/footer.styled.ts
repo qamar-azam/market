@@ -5,7 +5,7 @@ export const StyledAppFooter = styled.footer`
 `
 
 export const StyledAppFooterText = styled.div`
-  color: #1ea4ce;
+  color: ${({ theme }) => theme.footer.txtColor};
   font-size: 13px;
   text-align: center;
 `

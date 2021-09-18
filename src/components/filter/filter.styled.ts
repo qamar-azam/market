@@ -10,20 +10,21 @@ export const StyledFilterSection = styled.div`
 `
 
 export const StyledFilterForm = styled.form`
-  background-color: #fff;
+  background-color: ${({ theme }) => theme.form.background};
   padding: 24px;
 `
 
 export const StyledFilterFormLabel = styled.label`
-  color: #525252;
+  color: ${({ theme }) => theme.form.label.color};
   display: block;
-  font-size: 14px;
+  font-size: ${({ theme }) => theme.form.label.size};
   margin-bottom: 18px;
   padding-left: 30px;
 `
 
 export const StyledFilterFormInput = styled.input`
-  border: 1px solid #e0e0e0;
+  border: 1px solid ${({ theme }) => theme.form.input.border};
+  background: ${({ theme }) => theme.form.input.background};
   border-radius: 2px;
 
   width: 100%;

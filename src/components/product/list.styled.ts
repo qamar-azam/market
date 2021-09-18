@@ -59,10 +59,10 @@ export const StyledProductItemTitle = styled.div`
 `
 
 export const StyledProductItemButton = styled.button`
-  background-color: #1ea4ce;
+  background-color: ${({ theme }) => theme.button.bgColor};
   border-radius: 2px;
   border: 0;
-  color: #fff;
+  color: ${({ theme }) => theme.button.txtColor};
   cursor: pointer;
   display: block;
   font-size: 12px;
